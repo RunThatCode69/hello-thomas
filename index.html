@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hello Thomas</title>
+    <style>
+        body {
+            background: black;
+            color: white;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            margin: 0;
+            font-family: Arial, sans-serif;
+        }
+        h1 { font-size: 3rem; margin-bottom: 2rem; }
+        button {
+            padding: 12px 32px;
+            font-size: 1.2rem;
+            cursor: pointer;
+            border: 2px solid white;
+            background: transparent;
+            color: white;
+            border-radius: 8px;
+            transition: background 0.2s;
+        }
+        button:hover { background: #333; }
+        #reveal {
+            display: none;
+            margin-top: 2rem;
+        }
+        #reveal img {
+            max-width: 400px;
+            border-radius: 12px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Hello Thomas</h1>
+    <button onclick="document.getElementById('reveal').style.display='block'; this.style.display='none';">Click Here</button>
+    <div id="reveal"><img src="thomasbhole.png" alt="surprise"></div>
+</body>
+</html>
